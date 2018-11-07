@@ -30,4 +30,7 @@ class CreditCard {
     public double getCountBalance() {
         return balance;
     }
+    
+    public void repay(double money){
+        this.balance = balance + money;
 }

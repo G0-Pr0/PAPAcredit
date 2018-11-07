@@ -29,5 +29,14 @@ public class CreditCardTest {
         
         Assert.assertTrue(card.getCountBalance() == 1000);
     }
+    @Test
+    public void canRepayCurrentDebt(){
+        CreditCard creditcard = new CreditCard();
+        creditcard.assignLimit(2500);
+        
+        creditcard.withdraw(1000);
+        creditcard.withdraw(1000);
+        creditcard.repay(500);
+    }
     
 }
