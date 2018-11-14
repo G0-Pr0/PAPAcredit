@@ -34,4 +34,6 @@ class CreditCard {
 
         balance = balance - szekle;
     }
+    public void repay(double money){
+        balance=balance+money;
 }
