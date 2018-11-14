@@ -23,9 +23,6 @@ class CreditCard {
         return 2000;
     }
     
-    public void withdraw(double money) {
-        balance = balance - money;
-    }
     
     public double getCountBalance() {
         return balance;
@@ -35,7 +32,7 @@ class CreditCard {
         this.balance = balance + money;
     }
     
-    public void withdraw(dobule money) {
+    public void withdraw(double money) {
         if (money > cardLimit)
             System.out.println("Illegal action. Rejection");
         if (blocked = true)
