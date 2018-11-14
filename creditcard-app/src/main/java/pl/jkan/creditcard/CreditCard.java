@@ -1,12 +1,10 @@
 package pl.jkan.creditcard;
 
 class CreditCard {
-<<<<<<< HEAD
+
     private boolean blocked = false;
-=======
     private double balance = 0;
     private double cardlimit = 0;
->>>>>>> feature_withdraw
     public void assignLimit(double limit) {
         balance = limit;
         cardlimit = limit;
@@ -28,16 +26,12 @@ class CreditCard {
         return balance;
     }
     
-    public void repay(double money){
-        this.balance = balance + money;
-    }
-    
-    public void withdraw(double money) {
-        if (money > cardLimit)
-            System.out.println("Illegal action. Rejection");
+    public void withdraw (double szekle) {
+        if (szekle > cardLimit)
+            System.out.println("Mój Panie! Do obsługi tego urządzenia potrzeba wiecej złotych monet!");
         if (blocked = true)
-            System.out.println("Illegal action. Rejection");
+            System.out.println("Mój Panie! Do odblokowania tej karty potrzeba kilku wyszkolonych inżynierów!");
 
-        balance = balance - money;
+        balance = balance - szekle;
     }
 }
