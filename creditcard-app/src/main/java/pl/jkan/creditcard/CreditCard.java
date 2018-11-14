@@ -33,4 +33,14 @@ class CreditCard {
     
     public void repay(double money){
         this.balance = balance + money;
+    }
+    
+    public void withdraw(dobule money) {
+        if (money > cardLimit)
+            System.out.println("Illegal action. Rejection");
+        if (blocked = true)
+            System.out.println("Illegal action. Rejection");
+
+        balance = balance - money;
+    }
 }
